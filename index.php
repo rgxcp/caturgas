@@ -19,7 +19,9 @@
         </div>
     <?php endif; ?>
 
-    <div class="row justify-content-center">
+    <div class="container">
+        <?php $result = $mysqli->query("SELECT * FROM coba") or die($mysqli->error); ?>
+        <div class="row justify-content-center">
             <form action="config.php" method="POST">
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
                 <div class="form-group">
@@ -43,9 +45,7 @@
                 </div>
             </form>
         </div>
-
-    <div class="container">
-        <?php $result = $mysqli->query("SELECT * FROM coba") or die($mysqli->error); ?>
+        
         <div class="row justify-content-center">
             <table class="table">
                 <thead>
