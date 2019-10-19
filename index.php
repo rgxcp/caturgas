@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>To Do List</title>
+    <title>Catat Tugas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -18,6 +18,31 @@
             ?>
         </div>
     <?php endif; ?>
+
+    <div class="row justify-content-center">
+            <form action="config.php" method="POST">
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <div class="form-group">
+                    <label>Mata Kuliah</label>
+                    <input type="text" class="form-control" name="matkul" value="<?php echo $matkul; ?>" placeholder="Mata kuliah apa?">
+                </div>
+                <div class="form-group">
+                    <label>Tugas</label>
+                    <input type="text" class="form-control" name="tugas" value="<?php echo $tugas; ?>" placeholder="Tugas-nya ngapain?">
+                </div>
+                <div class="form-group">
+                    <label>Deadline</label>
+                    <input type="text" class="form-control" name="deadline" value="<?php echo $deadline; ?>" placeholder="Kapan dikumpulin?">
+                </div>
+                <div class="form-group">
+                <?php if ($update == true): ?>
+                    <button type="submit" class="btn btn-info" name="update">Update Tugas</button>
+                <?php else: ?>
+                    <button type="submit" class="btn btn-primary" name="save">Simpan Tugas</button>
+                <?php endif; ?>
+                </div>
+            </form>
+        </div>
 
     <div class="container">
         <?php $result = $mysqli->query("SELECT * FROM coba") or die($mysqli->error); ?>
@@ -45,31 +70,6 @@
                     </tr>
                 <?php endwhile; ?>
             </table>
-        </div>
-
-        <div class="row justify-content-center">
-            <form action="config.php" method="POST">
-                <input type="hidden" name="id" value="<?php echo $id; ?>">
-                <div class="form-group">
-                    <label>Mata Kuliah</label>
-                    <input type="text" class="form-control" name="matkul" value="<?php echo $matkul; ?>" placeholder="Mata kuliah apa?">
-                </div>
-                <div class="form-group">
-                    <label>Tugas</label>
-                    <input type="text" class="form-control" name="tugas" value="<?php echo $tugas; ?>" placeholder="Tugas-nya ngapain?">
-                </div>
-                <div class="form-group">
-                    <label>Deadline</label>
-                    <input type="text" class="form-control" name="deadline" value="<?php echo $deadline; ?>" placeholder="Kapan dikumpulin?">
-                </div>
-                <div class="form-group">
-                <?php if ($update == true): ?>
-                    <button type="submit" class="btn btn-info" name="update">Update Tugas</button>
-                <?php else: ?>
-                    <button type="submit" class="btn btn-primary" name="save">Simpan Tugas</button>
-                <?php endif; ?>
-                </div>
-            </form>
         </div>
     </div>
 </body>
