@@ -23,7 +23,7 @@
         <?php $result = $mysqli->query("SELECT * FROM coba") or die($mysqli->error); ?>
         <div class="row">
             <div class="col-sm">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center position-fixed">
                     <form action="config.php" method="POST">
                         <input type="hidden" name="id" value="<?php echo $id; ?>">
                         <div class="form-group">
