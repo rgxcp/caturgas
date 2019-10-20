@@ -63,9 +63,9 @@
                         <td><?php echo $row['deadline']; ?></td>
                         <td>
                             <a href="index.php?edit=<?php echo $row['id']; ?>"
-                                class="btn btn-info">Edit</a>
+                                class="btn btn-info">Ubah</a>
                             <a href="config.php?delete=<?php echo $row['id']; ?>"
-                                class="btn btn-danger">Delete</a>
+                                class="btn btn-danger">Selesai</a>
                         </td>
                     </tr>
                 <?php endwhile; ?>
