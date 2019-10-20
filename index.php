@@ -48,7 +48,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-md-auto">
                 <div class="row justify-content-center">
                     <table class="table">
                         <thead>
