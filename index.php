@@ -20,6 +20,70 @@
 
         <div class="container">
             <?php $result = $mysqli->query("SELECT * FROM coba ORDER BY id DESC") or die($mysqli->error); ?>
+
+            <!--Testing-->
+            <div class="d-flex justify-content-center">
+                <form action="config.php" method="POST" class="w-50">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                    <div class="pt-2">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-warning">MK</div>
+                            </div>
+                            <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="matkul" value="<?php echo $matkul; ?>" placeholder="Mata Kuliah">
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-warning">TG</div>
+                            </div>
+                            <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="tugas" value="<?php echo $tugas; ?>" placeholder="Tugas">
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-warning">DL</div>
+                            </div>
+                            <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="deadline" value="<?php echo $deadline; ?>" placeholder="Deadline">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">C</button>
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Refresh Tugas" name="read">R</button>
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">U</button>
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Hapus Tugas" name="delete">D</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex table-data" style="margin: 1em 10em;">
+                <table class="table table-striped table-dark">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Mata Kuliah</th>
+                            <th>Tugas</th>
+                            <th>Deadline</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <?php while ($row = $result->fetch_assoc()): ?>
+                        <tr>
+                            <td><?php echo $row['matkul']; ?></td>
+                            <td><?php echo $row['tugas']; ?></td>
+                            <td><?php echo $row['deadline']; ?></td>
+                            <td>
+                                <a href="index.php?edit=<?php echo $row['id']; ?>"
+                                    class="btn btn-info">Ubah</a>
+                                <a href="config.php?delete=<?php echo $row['id']; ?>"
+                                    class="btn btn-danger">Selesai</a>
+                            </td>
+                        </tr>
+                    <?php endwhile; ?>
+                </table>
+            </div>
+            <!--Testing-->
+
             <div class="row justify-content-center">
                 <form action="config.php" method="POST">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
