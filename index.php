@@ -20,7 +20,7 @@
     <?php endif; ?>
 
     <div class="container">
-        <?php $result = $mysqli->query("SELECT * FROM coba") or die($mysqli->error); ?>
+        <?php $result = $mysqli->query("SELECT * FROM coba ORDER BY id DESC") or die($mysqli->error); ?>
         <div class="row">
             <div class="col-sm">
                 <div class="row justify-content-center position-fixed">
