@@ -30,7 +30,7 @@
             <div class="d-flex justify-content-center">
                 <form action="config.php" method="POST" class="w-50">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
-                    <div class="pt-2">
+                    <div class="pt-4">
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text bg-warning"><i class="far fa-id-badge"></i></div>
