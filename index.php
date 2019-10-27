@@ -70,7 +70,7 @@
                             <td><?php echo $row['tugas']; ?></td>
                             <td><?php echo $row['deadline']; ?></td>
                             <td>
-                                <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-info"><i class="far fa-edit"></i></a>
+                                <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-success"><i class="fas fa-pen"></i></a>
                                 <a href="config.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="fas fa-check"></i></a>
                             </td>
                         </tr>
