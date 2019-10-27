@@ -9,7 +9,7 @@
     $tugas = "";
     $deadline = "";
 
-    if (isset($_POST['save'])) {
+    if (isset($_POST['create'])) {
         $matkul = $_POST['matkul'];
         $tugas = $_POST['tugas'];
         $deadline = $_POST['deadline'];
