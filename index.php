@@ -19,7 +19,7 @@
             </div>
         <?php endif; ?>
 
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Ada tugas apa hari ini?
             </a>
