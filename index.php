@@ -49,9 +49,7 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">C</button>
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Refresh Tugas" name="read">R</button>
                         <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">U</button>
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Hapus Tugas" name="delete">D</button>
                     </div>
                 </form>
             </div>
@@ -72,9 +70,9 @@
                             <td><?php echo $row['deadline']; ?></td>
                             <td>
                                 <a href="index.php?edit=<?php echo $row['id']; ?>"
-                                    class="btn btn-info">Ubah</a>
+                                    class="btn btn-info">U</a>
                                 <a href="config.php?delete=<?php echo $row['id']; ?>"
-                                    class="btn btn-danger">Selesai</a>
+                                    class="btn btn-danger">D</a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
