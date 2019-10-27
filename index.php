@@ -27,7 +27,7 @@
                     <div class="pt-2">
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
-                                <div class="input-group-text bg-warning">MK</div>
+                                <div class="input-group-text bg-warning"><i class="far fa-id-badge"></i></div>
                             </div>
                             <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="matkul" value="<?php echo $matkul; ?>" placeholder="Mata Kuliah">
                         </div>
@@ -35,7 +35,7 @@
                     <div class="pt-2">
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
-                                <div class="input-group-text bg-warning">TG</div>
+                                <div class="input-group-text bg-warning"><i class="far fa-clipboard"></i></div>
                             </div>
                             <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="tugas" value="<?php echo $tugas; ?>" placeholder="Tugas">
                         </div>
@@ -43,14 +43,14 @@
                     <div class="pt-2">
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
-                                <div class="input-group-text bg-warning">DL</div>
+                                <div class="input-group-text bg-warning"><i class="far fa-hourglass"></i></div>
                             </div>
                             <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="deadline" value="<?php echo $deadline; ?>" placeholder="Deadline">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">Tambah</button>
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">Ubah</button>
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">Tambah</button>
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">Update</button>
                     </div>
                 </form>
             </div>
@@ -70,10 +70,8 @@
                             <td><?php echo $row['tugas']; ?></td>
                             <td><?php echo $row['deadline']; ?></td>
                             <td>
-                                <a href="index.php?edit=<?php echo $row['id']; ?>"
-                                    class="btn btn-info">U</a>
-                                <a href="config.php?delete=<?php echo $row['id']; ?>"
-                                    class="btn btn-danger">D</a>
+                                <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-info"><i class="far fa-edit"></i></a>
+                                <a href="config.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="fas fa-check"></i></a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
