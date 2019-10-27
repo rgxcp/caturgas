@@ -20,8 +20,6 @@
 
         <div class="container">
             <?php $result = $mysqli->query("SELECT * FROM coba ORDER BY id DESC") or die($mysqli->error); ?>
-
-            <!--Testing-->
             <div class="d-flex justify-content-center">
                 <form action="config.php" method="POST" class="w-50">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
@@ -82,8 +80,6 @@
                     <?php endwhile; ?>
                 </table>
             </div>
-            <!--Testing-->
-
         </div>
     </body>
 </html>
