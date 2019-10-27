@@ -108,31 +108,6 @@
                     </div>
                 </form>
             </div>
-            <div class="row justify-content-center">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Mata Kuliah</th>
-                            <th>Tugas</th>
-                            <th>Deadline</th>
-                            <th colspan="2">Action</th>
-                        </tr>
-                    </thead>
-                    <?php while ($row = $result->fetch_assoc()): ?>
-                        <tr>
-                            <td><?php echo $row['matkul']; ?></td>
-                            <td><?php echo $row['tugas']; ?></td>
-                            <td><?php echo $row['deadline']; ?></td>
-                            <td>
-                                <a href="index.php?edit=<?php echo $row['id']; ?>"
-                                    class="btn btn-info">Ubah</a>
-                                <a href="config.php?delete=<?php echo $row['id']; ?>"
-                                    class="btn btn-danger">Selesai</a>
-                            </td>
-                        </tr>
-                    <?php endwhile; ?>
-                </table>
-            </div>
         </div>
     </body>
 </html>
