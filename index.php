@@ -84,30 +84,6 @@
             </div>
             <!--Testing-->
 
-            <div class="row justify-content-center">
-                <form action="config.php" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $id; ?>">
-                    <div class="form-group">
-                        <label>Mata Kuliah</label>
-                        <input type="text" class="form-control" name="matkul" value="<?php echo $matkul; ?>" placeholder="Mata kuliah apa?">
-                    </div>
-                    <div class="form-group">
-                        <label>Tugas</label>
-                        <input type="text" class="form-control" name="tugas" value="<?php echo $tugas; ?>" placeholder="Tugas-nya ngapain?">
-                    </div>
-                    <div class="form-group">
-                        <label>Deadline</label>
-                        <input type="text" class="form-control" name="deadline" value="<?php echo $deadline; ?>" placeholder="Kapan dikumpulin?">
-                    </div>
-                    <div class="form-group">
-                    <?php if ($update == true): ?>
-                        <button type="submit" class="btn btn-info" name="update">Update Tugas</button>
-                    <?php else: ?>
-                        <button type="submit" class="btn btn-primary" name="save">Simpan Tugas</button>
-                    <?php endif; ?>
-                    </div>
-                </form>
-            </div>
         </div>
     </body>
 </html>
