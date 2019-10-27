@@ -48,8 +48,8 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">C</button>
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">U</button>
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">Tambah</button>
+                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">Ubah</button>
                     </div>
                 </form>
             </div>
