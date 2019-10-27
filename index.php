@@ -19,6 +19,12 @@
             </div>
         <?php endif; ?>
 
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Ada tugas apa hari ini?
+            </a>
+        </nav>
+
         <div class="container">
             <?php $result = $mysqli->query("SELECT * FROM coba ORDER BY id DESC") or die($mysqli->error); ?>
             <div class="d-flex justify-content-center">
