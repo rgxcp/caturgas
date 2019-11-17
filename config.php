@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $mysqli = new mysqli('localhost', 'root', '', 'sbd') or die(mysqli_error($mysqli));
+    $mysqli = new mysqli('localhost', 'root', '', 'sbd_satu') or die(mysqli_error($mysqli));
 
     $update = false;
     $id = 0;
