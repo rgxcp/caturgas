@@ -21,12 +21,12 @@
 
         <nav class="navbar sticky-top navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Ada tugas apa hari ini?
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Ada tugas apa hari ini?
             </a>
         </nav>
 
         <div class="container">
-            <?php $result = $mysqli->query("SELECT * FROM coba ORDER BY id DESC") or die($mysqli->error); ?>
             <div class="d-flex justify-content-center">
                 <form action="config.php" method="POST" class="w-50">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
@@ -60,6 +60,9 @@
                     </div>
                 </form>
             </div>
+        </div>
+
+        <div class="container">
             <div class="d-flex table-data" style="margin: 1em 10em;">
                 <table class="table table-striped table-dark">
                     <thead class="thead-dark">
@@ -70,6 +73,7 @@
                             <th colspan="2">Action</th>
                         </tr>
                     </thead>
+                    <?php $result = $mysqli->query("SELECT * FROM coba ORDER BY id DESC") or die($mysqli->error); ?>
                     <?php while ($row = $result->fetch_assoc()): ?>
                         <tr>
                             <td><?php echo $row['matkul']; ?></td>
