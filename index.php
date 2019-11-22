@@ -24,6 +24,14 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Ada tugas apa hari ini?
             </a>
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Cari tugas?" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
         </nav>
 
         <div class="container">
