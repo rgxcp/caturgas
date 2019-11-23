@@ -29,7 +29,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                     </div>
-                    <input type="text" id="kataKunci" class="form-control" placeholder="Cari tugas?" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="kataKunci" placeholder="Cari tugas?" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </form>
         </nav>
