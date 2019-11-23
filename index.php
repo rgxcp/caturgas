@@ -70,9 +70,9 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="d-flex table-data" style="margin: 1em 10em;">
-                <table class="table table-striped table-dark">
+        <div class="container" id="containerTabel1">
+            <div class="d-flex table-data" style="margin: 1em 10em;" id="containerTabel2">
+                <table class="table table-striped table-dark" id="containerTabel3">
                     <thead class="thead-dark">
                         <tr>
                             <th>Mata Kuliah</th>
