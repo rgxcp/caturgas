@@ -1,8 +1,12 @@
-var keyword = document.getElementById('kataKunci');
+// $('#kataKunci').on('keyup', function() {
+//     $('#containerTabel3').load('search.php?search=' + $('#kataKunci').val());
+// });
+
+var kataKunci = document.getElementById('kataKunci');
 
 var containerTabel = document.getElementById('containerTabel3');
 
-keyword.addEventListener('keyup', function() {
+kataKunci.addEventListener('keyup', function() {
     
     var xhr = new XMLHttpRequest();
 
@@ -12,7 +16,7 @@ keyword.addEventListener('keyup', function() {
         }
     }
 
-    xhr.open('GET', 'search.php?keyword=' + keyword.value, true);
+    xhr.open('GET', 'search.php?kataKunci=' + kataKunci.value, true);
 
     xhr.send();
 
