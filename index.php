@@ -10,6 +10,9 @@
                 margin: 1.5em 0.6em;
                 padding: 0.5em 2.4em;
             }
+            .customTable {
+                margin: 1em 5em;
+            }
         </style>
         <title>Catat Tugas</title>
     </head>
@@ -77,7 +80,7 @@
         </div>
 
         <div class="container" id="containerTabel1">
-            <div class="d-flex table-data" style="margin: 1em 10em;" id="containerTabel2">
+            <div class="d-flex table-data customTable" id="containerTabel2">
                 <table class="table table-striped table-dark" id="containerTabel3">
                     <thead class="thead-dark">
                         <tr>
