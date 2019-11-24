@@ -1,5 +1,5 @@
 $('#kataKunci').on('keyup', function() {
-    $('#containerTabel3').load('search.php?kataKunci=' + $('#kataKunci').val());
+    $('#containerTabel').load('search.php?kataKunci=' + $('#kataKunci').val());
 });
 
 // var kataKunci = document.getElementById('kataKunci');

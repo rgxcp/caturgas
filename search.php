@@ -8,7 +8,7 @@ $result = $mysqli->query("SELECT * FROM coba WHERE matkul LIKE '%$kataKunci%' OR
 
 ?>
 
-<table class="table table-striped table-dark" id="containerTabel3">
+<table class="table table-striped table-dark" id="containerTabel">
     <thead class="thead-dark">
         <tr>
             <th>Mata Kuliah</th>
