@@ -14,16 +14,12 @@
         $tugas = $_POST['tugas'];
         $deadline = $_POST['deadline'];
         $mysqli->query("INSERT INTO coba(matkul, tugas, deadline) VALUES('$matkul', '$tugas', '$deadline')") or die($mysqli->error());
-        $_SESSION['message'] = "Tugas udah disimpan!";
-        $_SESSION['msg_type'] = "success";
         header("location: index.php");
     }
 
     if (isset($_GET['delete'])) {
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM coba WHERE id=$id") or die($mysqli->error());
-        $_SESSION['message'] = "Tugas udah selesai!";
-        $_SESSION['msg_type'] = "danger";
         header("location: index.php");
     }
 
@@ -43,8 +39,6 @@
         $tugas = $_POST['tugas'];
         $deadline = $_POST['deadline'];
         $result = $mysqli->query("UPDATE coba SET matkul='$matkul', tugas='$tugas', deadline='$deadline' WHERE id=$id") or die($mysqli->error());
-        $_SESSION['message'] = "Tugas berhasil diubah!";
-        $_SESSION['msg_type'] = "warning";
         header("location: index.php");
     }
 ?>

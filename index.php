@@ -19,15 +19,6 @@
     <body>
         <?php require_once 'config.php'; ?>
 
-        <?php if (isset($_SESSION['message'])): ?>
-            <div class="alert alert-<?=$_SESSION['msg_type']?>">
-                <?php
-                    echo $_SESSION['message'];
-                    unset($_SESSION['message']);
-                ?>
-            </div>
-        <?php endif; ?>
-
         <nav class="navbar sticky-top navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
