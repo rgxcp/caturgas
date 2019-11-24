@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/31372f9642.js" crossorigin="anonymous"></script>
+        <style>
+            .customButton {
+                margin: 1.5em 0.6em;
+                padding: 0.5em 2.4em;
+            }
+        </style>
         <title>Catat Tugas</title>
     </head>
     <body>
@@ -63,8 +69,8 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">Tambah</button>
-                        <button type="submit" style="margin: 1.5em 0.6em; padding: 0.5em 2.4em;" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">Update</button>
+                        <button type="submit" class="btn btn-primary customButton" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">Tambah</button>
+                        <button type="submit" class="btn btn-success customButton" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">Update</button>
                     </div>
                 </form>
             </div>
