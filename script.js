@@ -1,29 +1,23 @@
 // jQuery
 jQuery(document).ready(function() {
-    jQuery('#kataKunci').on('keyup', function() {
-        jQuery('#containerTabel').load('search.php?kataKunci=' + jQuery('#kataKunci').val());
+    jQuery('#keyword').on('keyup', function() {
+        jQuery('#table').load('search.php?keyword=' + jQuery('#keyword').val());
     });
 });
 
 /*
 // Ajax
-var kataKunci = document.getElementById('kataKunci');
+var keyword = document.getElementById('keyword');
+var table = document.getElementById('table');
 
-var containerTabel = document.getElementById('containerTabel3');
-
-kataKunci.addEventListener('keyup', function() {
-    
+keyword.addEventListener('keyup', function() {    
     var xhr = new XMLHttpRequest();
-
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4 && xhr.status == 200) {
-            containerTabel.innerHTML = xhr.responseText;
+            table.innerHTML = xhr.responseText;
         }
     }
-
-    xhr.open('GET', 'search.php?kataKunci=' + kataKunci.value, true);
-
+    xhr.open('GET', 'search.php?keyword=' + keyword.value, true);
     xhr.send();
-
 })
 */

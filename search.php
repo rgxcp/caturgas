@@ -2,13 +2,13 @@
 
 require_once 'config.php';
 
-$kataKunci = $_GET['kataKunci'];
+$keyword = $_GET['keyword'];
 
-$result = $mysqli->query("SELECT * FROM caturgas WHERE matkul LIKE '%$kataKunci%' OR tugas LIKE '%$kataKunci%' OR deadline LIKE '%$kataKunci%' ORDER BY id DESC") or die($mysqli->error);
+$result = $mysqli->query("SELECT * FROM caturgas WHERE matkul LIKE '%$keyword%' OR tugas LIKE '%$keyword%' OR deadline LIKE '%$keyword%' ORDER BY id DESC") or die($mysqli->error);
 
 ?>
 
-<table class="table table-striped table-dark" id="containerTabel">
+<table class="table table-striped table-dark" id="table">
     <thead class="thead-dark">
         <tr>
             <th>Mata Kuliah</th>

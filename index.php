@@ -31,7 +31,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                     </div>
-                    <input type="text" class="form-control" id="kataKunci" placeholder="Cari tugas?" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="keyword" placeholder="Cari tugas?" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </form>
         </nav>
@@ -74,7 +74,7 @@
 
         <div class="container">
             <div class="d-flex table-data customTable">
-                <table class="table table-striped table-dark" id="containerTabel">
+                <table class="table table-striped table-dark" id="table">
                     <thead class="thead-dark">
                         <tr>
                             <th>Mata Kuliah</th>
