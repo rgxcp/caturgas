@@ -17,12 +17,6 @@
         header("location: index.php");
     }
 
-    if (isset($_GET['delete'])) {
-        $id = $_GET['delete'];
-        $mysqli->query("DELETE FROM caturgas WHERE id=$id") or die($mysqli->error());
-        header("location: index.php");
-    }
-
     if (isset($_GET['edit'])) {
         $id = $_GET['edit'];
         $update = true;
@@ -39,6 +33,12 @@
         $tugas = $_POST['tugas'];
         $deadline = $_POST['deadline'];
         $result = $mysqli->query("UPDATE caturgas SET matkul='$matkul', tugas='$tugas', deadline='$deadline' WHERE id=$id") or die($mysqli->error());
+        header("location: index.php");
+    }
+
+    if (isset($_GET['delete'])) {
+        $id = $_GET['delete'];
+        $mysqli->query("DELETE FROM caturgas WHERE id=$id") or die($mysqli->error());
         header("location: index.php");
     }
 ?>
