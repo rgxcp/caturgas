@@ -3,8 +3,6 @@
 
     $mysqli = new mysqli('localhost', 'root', '', 'sbd_satu') or die(mysqli_error($mysqli));
 
-    $update = false;
-    $id = 0;
     $matkul = "";
     $tugas = "";
     $deadline = "";
@@ -19,7 +17,6 @@
 
     if (isset($_GET['edit'])) {
         $id = $_GET['edit'];
-        $update = true;
         $result = $mysqli->query("SELECT * FROM caturgas WHERE id=$id") or die($mysqli->error());
         $row = $result->fetch_array();
         $matkul = $row['matkul'];
