@@ -83,7 +83,7 @@
                             <th colspan="2">Action</th>
                         </tr>
                     </thead>
-                    <?php $result = $mysqli->query("SELECT * FROM coba ORDER BY id DESC") or die($mysqli->error); ?>
+                    <?php $result = $mysqli->query("SELECT * FROM caturgas ORDER BY id DESC") or die($mysqli->error); ?>
                     <?php while ($row = $result->fetch_assoc()): ?>
                         <tr>
                             <td><?php echo $row['matkul']; ?></td>
