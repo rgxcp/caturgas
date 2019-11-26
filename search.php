@@ -4,7 +4,7 @@ require_once 'config.php';
 
 $kataKunci = $_GET['kataKunci'];
 
-$result = $mysqli->query("SELECT * FROM coba WHERE matkul LIKE '%$kataKunci%' OR tugas LIKE '%$kataKunci%' OR deadline LIKE '%$kataKunci%' ORDER BY id DESC") or die($mysqli->error);
+$result = $mysqli->query("SELECT * FROM caturgas WHERE matkul LIKE '%$kataKunci%' OR tugas LIKE '%$kataKunci%' OR deadline LIKE '%$kataKunci%' ORDER BY id DESC") or die($mysqli->error);
 
 ?>
 
