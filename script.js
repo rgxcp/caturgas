@@ -1,6 +1,8 @@
 // jQuery
-jQuery('#kataKunci').on('keyup', function() {
-    jQuery('#containerTabel').load('search.php?kataKunci=' + jQuery('#kataKunci').val());
+jQuery(document).ready(function() {
+    jQuery('#kataKunci').on('keyup', function() {
+        jQuery('#containerTabel').load('search.php?kataKunci=' + jQuery('#kataKunci').val());
+    });
 });
 
 /*
