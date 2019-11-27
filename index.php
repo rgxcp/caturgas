@@ -8,15 +8,15 @@
         <script src="https://kit.fontawesome.com/31372f9642.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <style>
+            .actionWidth {
+                width: 110px;
+            }
             .customButton {
                 margin: 1.5em 0.6em;
                 padding: 0.5em 2.4em;
             }
             .customTable {
                 margin: 1em 5em;
-            }
-            .actionWidth {
-                width: 110px;
             }
         </style>
         <title>Catat Tugas</title>
