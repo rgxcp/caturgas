@@ -45,7 +45,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text bg-warning"><i class="far fa-id-badge"></i></div>
                             </div>
-                            <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="matkul" value="<?php echo $matkul; ?>" placeholder="Mata Kuliah">
+                            <input type="text" autocomplete="off" class="form-control" name="matkul" value="<?php echo $matkul; ?>" placeholder="Mata Kuliah">
                         </div>
                     </div>
                     <div class="pt-2">
@@ -53,7 +53,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text bg-warning"><i class="far fa-clipboard"></i></div>
                             </div>
-                            <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="tugas" value="<?php echo $tugas; ?>" placeholder="Tugas">
+                            <input type="text" autocomplete="off" class="form-control" name="tugas" value="<?php echo $tugas; ?>" placeholder="Tugas">
                         </div>
                     </div>
                     <div class="pt-2">
@@ -61,12 +61,12 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text bg-warning"><i class="far fa-hourglass"></i></div>
                             </div>
-                            <input type="text" autocomplete="off" class="form-control" id="inlineFormInputGroup" name="deadline" value="<?php echo $deadline; ?>" placeholder="Deadline">
+                            <input type="text" autocomplete="off" class="form-control" name="deadline" value="<?php echo $deadline; ?>" placeholder="Deadline">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-primary customButton" data-toggle="tooltip" data-placement="bottom" title="Tambah Tugas" name="create">Tambah</button>
-                        <button type="submit" class="btn btn-success customButton" data-toggle="tooltip" data-placement="bottom" title="Update Tugas" name="update">Update</button>
+                        <button type="submit" class="btn btn-primary customButton" name="create" data-toggle="tooltip" data-placement="bottom" title="Tambah tugas">Tambah</button>
+                        <button type="submit" class="btn btn-success customButton" name="update" data-toggle="tooltip" data-placement="bottom" title="Update tugas">Update</button>
                     </div>
                 </form>
             </div>
