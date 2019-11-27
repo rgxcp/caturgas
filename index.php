@@ -21,17 +21,17 @@
     <body>
         <?php require_once 'config.php'; ?>
 
-        <nav class="navbar sticky-top navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="index.php">
+                <img src="logo.png" width="30" height="30" class="d-inline-block align-top">
                 Ada tugas apa hari ini?
             </a>
             <form class="form-inline">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                        <span class="input-group-text"><i class="fas fa-search fa-sm"></i></span>
                     </div>
-                    <input type="text" class="form-control" id="keyword" placeholder="Cari tugas?" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="keyword" placeholder="Cari tugas">
                 </div>
             </form>
         </nav>
