@@ -8,7 +8,7 @@ $result = $mysqli->query("SELECT * FROM caturgas WHERE matkul LIKE '%$keyword%' 
 
 ?>
 
-<table class="table table-striped table-dark" id="table">
+<table class="table table-dark table-striped" id="table">
     <thead class="thead-dark">
         <tr>
             <th>Mata Kuliah</th>
@@ -17,15 +17,15 @@ $result = $mysqli->query("SELECT * FROM caturgas WHERE matkul LIKE '%$keyword%' 
             <th colspan="2">Action</th>
         </tr>
     </thead>
-        <?php while ($row = $result->fetch_assoc()): ?>
-            <tr>
-                <td><?php echo $row['matkul']; ?></td>
-                <td><?php echo $row['tugas']; ?></td>
-                <td><?php echo $row['deadline']; ?></td>
-                <td>
-                    <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-success"><i class="fas fa-pen"></i></a>
-                    <a href="config.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="fas fa-check"></i></a>
-                </td>
-            </tr>
-        <?php endwhile; ?>
+    <?php while ($row = $result->fetch_assoc()): ?>
+        <tr>
+            <td><?php echo $row['matkul']; ?></td>
+            <td><?php echo $row['tugas']; ?></td>
+            <td><?php echo $row['deadline']; ?></td>
+            <td>
+                <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-success"><i class="fas fa-pen fa-sm"></i></a>
+                <a href="config.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="fas fa-check fa-sm"></i></a>
+            </td>
+        </tr>
+    <?php endwhile; ?>
 </table>
