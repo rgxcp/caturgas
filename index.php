@@ -15,6 +15,9 @@
             .customTable {
                 margin: 1em 5em;
             }
+            .actionWidth {
+                width: 110px;
+            }
         </style>
         <title>Catat Tugas</title>
     </head>
@@ -80,7 +83,7 @@
                             <th>Mata Kuliah</th>
                             <th>Tugas</th>
                             <th>Deadline</th>
-                            <th colspan="2">Action</th>
+                            <th class="actionWidth" colspan="2">Action</th>
                         </tr>
                     </thead>
                     <?php $result = $mysqli->query("SELECT * FROM caturgas ORDER BY id DESC") or die($mysqli->error); ?>
@@ -89,7 +92,7 @@
                             <td><?php echo $row['matkul']; ?></td>
                             <td><?php echo $row['tugas']; ?></td>
                             <td><?php echo $row['deadline']; ?></td>
-                            <td>
+                            <td class="actionWidth">
                                 <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-success"><i class="fas fa-pen fa-sm"></i></a>
                                 <a href="config.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="fas fa-check fa-sm"></i></a>
                             </td>

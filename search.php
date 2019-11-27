@@ -22,7 +22,7 @@ $result = $mysqli->query("SELECT * FROM caturgas WHERE matkul LIKE '%$keyword%' 
             <td><?php echo $row['matkul']; ?></td>
             <td><?php echo $row['tugas']; ?></td>
             <td><?php echo $row['deadline']; ?></td>
-            <td>
+            <td class="actionWidth">
                 <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-success"><i class="fas fa-pen fa-sm"></i></a>
                 <a href="config.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="fas fa-check fa-sm"></i></a>
             </td>
