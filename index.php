@@ -19,7 +19,7 @@
                 margin: 1em 5em;
             }
         </style>
-        <title>Catat Tugas</title>
+        <title>Caturgas - Catat & Atur Tugas</title>
     </head>
     <body>
         <?php require_once 'config.php'; ?>
