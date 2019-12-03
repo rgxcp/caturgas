@@ -1,6 +1,7 @@
-# PHP - Caturgas (Catat dan Atur Tugas)
-EN : Website-based task note-taking application uisng PHP with CRUD functions.
-ID : Aplikasi pencatat tugas berbasis website menggunakan PHP dengan fungsi CRUD.
+# PHP - Caturgas
+EN : Caturgas (Catat & Atur Tugas), website-based task note-taking application uisng PHP with CRUD functions.
+
+ID : Caturgas (Catat & Atur Tugas), aplikasi pencatat tugas berbasis website menggunakan PHP dengan fungsi CRUD.
 
 ## Requirements
 1. XAMPP
@@ -17,7 +18,12 @@ ID : Aplikasi pencatat tugas berbasis website menggunakan PHP dengan fungsi CRUD
    ```
 5. Create the table. 
    ```
-   CREATE TABLE `sbd_satu`.`caturgas` ( `id` INT NOT NULL AUTO_INCREMENT , `matkul` VARCHAR(50) NOT NULL , `tugas` VARCHAR(200) NOT NULL , `deadline` VARCHAR(50) NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; 
+   CREATE TABLE `sbd_satu`.`caturgas` ( 
+       `id` INT NOT NULL AUTO_INCREMENT , 
+       `matkul` VARCHAR(50) NOT NULL , 
+       `tugas` VARCHAR(200) NOT NULL , 
+       `deadline` VARCHAR(50) NULL , 
+       PRIMARY KEY (`id`)) ENGINE = InnoDB; 
    ```
-6. Visit [Index Page](http:/127.0.0.1/php-caturgas/index.php).
+6. Visit the [Index Page](http:/127.0.0.1/php-caturgas/index.php).
 7. Do-what-you-want-with-it!.
