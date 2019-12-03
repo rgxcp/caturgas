@@ -1,7 +1,7 @@
 # PHP - Caturgas
-EN : Caturgas (Catat & Atur Tugas), website-based task note-taking application uisng PHP with CRUD functions.
+EN: Caturgas (Catat & Atur Tugas), website-based task note-taking application uisng PHP with CRUD functions.
 
-ID : Caturgas (Catat & Atur Tugas), aplikasi pencatat tugas berbasis website menggunakan PHP dengan fungsi CRUD.
+ID: Caturgas (Catat & Atur Tugas), aplikasi pencatat tugas berbasis website menggunakan PHP dengan fungsi CRUD.
 
 ## Requirements
 1. XAMPP
