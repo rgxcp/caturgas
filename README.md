@@ -9,7 +9,7 @@ ID : Caturgas (Catat & Atur Tugas), aplikasi pencatat tugas berbasis website men
 3. Table
 
 ## How to Use
-1. Clone this repository to `htdocs` folder in `XAMPP` installation folder. Ex: `$:\XAMPP\htdocs`.
+1. Clone this repository to `htdocs` folder in `XAMPP` installation folder. Ex: `$:\XAMPP\htdocs\`.
 2. Fire-up XAMPP and start Apache & MySQL Module.
 3. Visit [PHPMyAdmin](http:/127.0.0.1/phpmyadmin) page.
 4. Create the database.
