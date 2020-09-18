@@ -3,6 +3,9 @@
 
 **ID**: Caturgas (Catat & Atur Tugas), aplikasi pencatat tugas berbasis website menggunakan PHP dengan fungsi CRUD.
 
+## Status
+END OF LIFE
+
 ## Requirements
 1. XAMPP
 
